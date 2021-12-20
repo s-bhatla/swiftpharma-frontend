@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/swiftpharma.css">
+    <link rel="website icon" href="./images/pharmacy-logo-by-Vexels.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="./js/style.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" async></script>
+
+    
+        <title>SwiftPharma</title>
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="">
+        <!-- <div class="column"><h1>header</h1></div> -->
+        <header class="main-header" id="get-header">
+
+            <nav class=" nav main-nav">
+                <a href="SwiftPharma.html"><img class="image header-logo" src="./images/pharmacy-logo-by-Vexels.png"></a>
+
+                <div class="search-header">
+                    <div class="dropdown">
+                        <!--to create a hover button-->
+                        <button class="button dropbtn">Browse</button>
+                        <div class="dropdown-content">
+                            <a href="search-res.html">Ayurvedic</a>
+                            <a href="search-res.html">Homeopathic</a>
+                            <a href="search-res.html">Allopathic</a>
+                        </div>
+                    </div>
+                    <form class="form-class" action="" method="">
+                        <input type="text" id="query" name="query" placeholder="Search..." required="">
+                        <button class="button search-btn" type="submit"> <i class="fa fa-search"> </i> </button>
+                    </form>
+                </div>
+                <div class="user-content">
+                    
+                    <div class="user-msg"> <h5 class="hello-user">Hello, sidharth</h5><a href="user-info.html"> <button class="button user-btn-logged" type="button"> <i class="fa fa-user"> </i> </button></a> </div>
+                    
+                </div>
+            </nav>
+        </header>
+
+        <!-- <i class="fa fa-user"> </i> -->
+
+<div class="content">
+    <div class="content">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item" id="imgban1"></div>
+                <div class="carousel-item active" id="imgban2"></div>
+                <div class="carousel-item" id="imgban3"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    <section class="categories">
+        <h2 class="categories-title">Shop By Category</h2>
+        <div id="categories" class="carousel slide categories-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="shop-row">
+                        <div class="categories-card">
+                            <a href="search-res.html">
+                                <img class="card-categories-img" src="./images/antibiotics.jpg" alt="category">
+                            </a>
+                            <span class="categories-name">Antibiotics</span>
+                        </div>
+                        <div class="categories-card">
+                            <a href="search-res.html">
+                                <img class="card-categories-img" src="./images/antidepressants.jpg" alt="category">
+                            </a>
+                            <span class="categories-name">Anti-Depressants</span>
+                        </div>
+                        <div class="categories-card">
+                            <a href="search-res.html">
+                                <img class="card-categories-img" src="./images/antifungals.jpg" alt="category">
+                            </a>
+                            <span class="categories-name">Anti-Fungals</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="shop-row">
+                        <div class="categories-card">
+                            <a href="search-res.html">
+                                <img class="card-categories-img" src="./images/analgesics.jpg" alt="category">
+                            </a>
+                            <span class="categories-name">Analgesics</span>
+                        </div>
+                        <div class="categories-card">
+                            <a href="search-res.html">
+                                <img class="card-categories-img" src="./images/anti-inflammatories.jpg" alt="category">
+                            </a>
+                            <span class="categories-name">Anti-inflammatories</span>
+                        </div>
+                        <div class="categories-card">
+                            <a href="search-res.html">
+                                <img class="card-categories-img" src="./images/betablockers.jpg" alt="category">
+                            </a>
+                            <span class="categories-name">Beta-Blockers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#categories" data-bs-slide="prev">
+                <div class="row-btn previous-button"></div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#categories" data-bs-slide="next">
+                <div class="row-btn next-button"></div>
+            </button>
+        </div>
+    </section>
+    
+    <section class="shop">
+        <h2 class="shop-title">Items On Sale</h2>
+        <div id="shop" class="carousel slide card-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="shop-row">
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-121.png">
+                                <div>
+                                    <span class="card-product-name">Cough Drop</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.327</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-134.png">
+                                <div>
+                                    <span class="card-product-name">Sporlac</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.105</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="shop-row">
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-121.png">
+                                <div>
+                                    <span class="card-product-name">Cough Drop</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.327</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-134.png">
+                                <div>
+                                    <span class="card-product-name">Sporlac</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.105</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#shop" data-bs-slide="prev">
+                    <div class="row-btn previous-button"></div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#shop" data-bs-slide="next">
+                    <div class="row-btn next-button"></div>
+                </button>
+        </div>
+    </section>
+
+
+    <section class="guidelines">
+        <h2 class="guidelines-title">Covid Precaution Articles</h2>
+        <div id="covid" class="carousel slide card-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="guidelines-row">
+                        <div class="guidelines-card">
+                            <a href="https://www.health.harvard.edu/diseases-and-conditions/preventing-the-spread-of-the-coronavirus" target="blank">
+                                <img class="guidelines-card-img" src="./images/covart1.png">
+                                <span class="guidelines-card-name">Stopping the Spread</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://healthmatters.nyp.org/how-to-protect-yourself-from-coronavirus-covid-19/" target="blank">
+                                <img class="guidelines-card-img" src="./images/covart2.png">
+                                <span class="guidelines-card-name">How to protect from COVID</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="blank">
+                                <img class="guidelines-card-img" src="./images/covart3.png">
+                                <span class="guidelines-card-name">Fever prevention</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="guidelines-row">
+                        <div class="guidelines-card">
+                            <a href="https://www.webmd.com/lung/coronavirus-prevention-overview#1" target="blank">
+                                <img class="guidelines-card-img" src="./images/covart4.png">
+                                <span class="guidelines-card-name">COVID-19 Prevention</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/how-can-i-protect-myself-from-coronavirus" target="blank">
+                                <img class="guidelines-card-img" src="./images/covart5.png">
+                                <span class="guidelines-card-name">How to protect yourself from COVID-19</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://www.mayoclinic.org/diseases-conditions/coronavirus/expert-answers/novel-coronavirus/faq-20478727" target="blank">
+                                <img class="guidelines-card-img" src="./images/covart1.png">
+                                <span class="guidelines-card-name">Expert Opinions on COVID-19</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#covid" data-bs-slide="prev">
+                <div class="row-btn previous-button"></div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#covid" data-bs-slide="next">
+                <div class="row-btn next-button"></div>
+            </button>
+        </div>
+    </section>
+
+    <section class="shop">
+        <h2 class="shop-title">Best Recommendations</h2>
+        <div id="recommendations" class="carousel slide card-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="shop-row">
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-121.png">
+                                <div>
+                                    <span class="card-product-name">Cough Drop</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.327</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-134.png">
+                                <div>
+                                    <span class="card-product-name">Sporlac</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.105</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+
+                        <div class="card-product">
+                            <a href="SwiftPharma.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="shop-row">
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-121.png">
+                                <div>
+                                    <span class="card-product-name">Cough Drop</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.327</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-134.png">
+                                <div>
+                                    <span class="card-product-name">Sporlac</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.105</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+            
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+
+                        <div class="card-product">
+                            <a href="SwiftPharma.html">
+                                <img class="card-product-img" src="./images/D-130.png">
+                                <div>
+                                    <span class="card-product-name">YOHIMBINUM MT</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.315</span>
+                                </div>
+                            </a>
+                            <button class="button card-product-btn">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#recommendations" data-bs-slide="prev">
+                    <div class="row-btn previous-button"></div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#recommendations" data-bs-slide="next">
+                    <div class="row-btn next-button"></div>
+                </button>
+        </div>
+    </section>
+
+
+    
+    <section class="guidelines">
+        <h2 class="guidelines-title">Health Advice Articles</h2>
+        <div id="guidelines" class="carousel slide card-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="guidelines-row">
+                        <div class="guidelines-card">
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19-small-public-gatherings" target="blank">
+                                <img class="guidelines-card-img" src="./images/article1.png">
+                                <span class="guidelines-card-name">COVID-19 Precautions</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks" target="blank">
+                                <img class="guidelines-card-img" src="./images/article2.png">
+                                <span class="guidelines-card-name">Advice for using Masks in Public</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines/advice" target="blank">
+                                <img class="guidelines-card-img" src="./images/article3.png">
+                                <span class="guidelines-card-name">Advice for Vaccination</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="guidelines-row">
+                        <div class="guidelines-card">
+                            <a href="https://www.geisinger.org/health-and-wellness/wellness-articles" target="blank">
+                                <img class="guidelines-card-img" src="./images/article4.png">
+                                <span class="guidelines-card-name">Wellness Articles</span>
+                            </a>
+                        </div>
+                        <div class="guidelines-card">
+                            <a href="https://www.healthline.com/health-news" target="blank">
+                                <img class="guidelines-card-img" src="./images/article5.png">
+                                <span class="guidelines-card-name">Health Articles</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guidelines" data-bs-slide="prev">
+                <div class="row-btn previous-button"></div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guidelines" data-bs-slide="next">
+                <div class="row-btn next-button"></div>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section class="shop">
+        <h2 class="shop-title">Personal Recommendations</h2>
+        <div id="personal-rec" class="carousel slide card-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                    
+                <div class="carousel-item">
+                    <div class="shop-row">
+                        
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-115.png">
+                                <div>
+                                    <span class="card-product-name">Pyrigesic</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.26.35</span>
+                                </div>
+                            </a>
+                            <a href="item-page.html">
+                            <button class="button card-product-btn">BUY</button></a>
+                        </div>
+                        
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-116.png">
+                                <div>
+                                    <span class="card-product-name">Mupi-XL Ointment</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.156.00</span>
+                                </div>
+                            </a>
+                            <a href="item-page.html">
+                            <button class="button card-product-btn">BUY</button></a>
+                        </div>
+                        
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-117.png">
+                                <div>
+                                    <span class="card-product-name">Nixiyax Capsule</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.386.00</span>
+                                </div>
+                            </a>
+                            <a href="item-page.html">
+                            <button class="button card-product-btn">BUY</button></a>
+                        </div>
+                        
+                        <div class="card-product">
+                            <a href="item-page.html">
+                                <img class="card-product-img" src="./images/D-118.png">
+                                <div>
+                                    <span class="card-product-name">Livafin Cream</span>
+                                </div>
+                                <div class="card-product-price-content">
+                                    <span class="card-product-content">Best Price* </span>
+                                    <span class="card-product-price">Rs.290.10</span>
+                                </div>
+                            </a>
+                            <a href="item-page.html">
+                            <button class="button card-product-btn">BUY</button></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                    
+                <div class="carousel-item active">
+                    <div class="shop-row">
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-119.png">
+                                    <div>
+                                        <span class="card-product-name">Spedifen</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.2023.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-125.png">
+                                    <div>
+                                        <span class="card-product-name">Gastracid</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.100.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-127.png">
+                                    <div>
+                                        <span class="card-product-name">Tufpro</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.386.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-128.png">
+                                    <div>
+                                        <span class="card-product-name">Supp Stress Relief</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.1167.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                
+                    
+                <div class="carousel-item">
+                    <div class="shop-row">
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-133.png">
+                                    <div>
+                                        <span class="card-product-name">Cureveda Stress Shield</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.1185.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-135.png">
+                                    <div>
+                                        <span class="card-product-name">Oxithens Capsule</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.254.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                        
+                            <div class="card-product">
+                                <a href="item-page.html">
+                                    <img class="card-product-img" src="./images/D-141.png">
+                                    <div>
+                                        <span class="card-product-name">Q3 Syrup</span>
+                                    </div>
+                                    <div class="card-product-price-content">
+                                        <span class="card-product-content">Best Price* </span>
+                                        <span class="card-product-price">Rs.54.00</span>
+                                    </div>
+                                </a>
+                                <a href="item-page.html">
+                                <button class="button card-product-btn">BUY</button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#personal-rec" data-bs-slide="prev">
+                    <div class="row-btn previous-button"></div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#personal-rec" data-bs-slide="next">
+                    <div class="row-btn next-button"></div>
+                </button>
+        </div>
+    </section>
+    
+</div>
+
+<footer class="footer main-footer">
+    <div class="nav main-footer-container">
+        <div class="footer-column know-us">
+            <ul class="main-footer-nav">
+                <span class="footer-column-title">Know Us</span>
+                <li>Join Us</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+
+        <div class="footer-column shopping">
+            <ul class="main-footer-nav">
+                <span class="footer-column-title">Shopping</span>
+                <li>Browse by A-Z</li>
+                <li>Sort By Manufacturer</li>
+            </ul>
+        </div>
+
+        <div class="footer-column contact">
+            <ul class="main-footer-nav">
+                <span class="footer-column-title">Contact</span>
+                <li><i class="fa fa-globe">Plot No. 417, Industrial Area Phase-9, S.A.S Nagar, Mohali 160062.
+                        (Punjab)</i></li>
+                <li><i class="fa fa-phone">1234567890</i></li>
+                <li><i class="fa fa-envelope-open">SwiftPharma@abc.com</i></li>
+
+            </ul>
+        </div>
+
+        <div class="footer-column website-info">
+            <h2 class="sitename">SwiftPharma</h2>
+            <img class="image footer-logo" src="./images/pharmacy-logo-by-Vexels.png">
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <!-- <div class="footer-bottom-container"> -->
+            <span class="copyright">© Swiftpharma | Website Designed And Managed By : The Archons</span>
+            <ul class="footer-bottom-list">
+                <li><a href="https://www.facebook.com/" target="blank"><img class="image footer-img" src="./images/logo-facebook.png" alt="click to go to facebook"></a></li><a href="https://www.facebook.com/" target="blank">
+                </a><li><a href="https://www.facebook.com/" target="blank"></a><a href="https://www.instagram.com/" target="blank"><img class="image footer-img" src="./images/logo-instagram.png"></a></li><a href="https://www.instagram.com/" target="blank">
+                </a><li><a href="https://www.instagram.com/" target="blank"></a><a href="https://www.twitter.com/" target="blank"><img class="image footer-img" src="./images/logo-twitter.png"></a></li><a href="https://www.twitter.com/" target="blank">
+            </a></ul><a href="https://www.twitter.com/" target="blank">
+        <!-- </div> -->
+    </a></div><a href="https://www.twitter.com/" target="blank">
+</a></footer><a href="https://www.twitter.com/" target="blank">
+
+
+
+</a></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

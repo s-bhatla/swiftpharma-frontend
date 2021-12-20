@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/swiftpharma.css">
+    <link rel="website icon" href="./images/pharmacy-logo-by-Vexels.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="./js/style.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" async></script>
+
+    
+        <title>SwiftPharma</title>
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="">
+        <!-- <div class="column"><h1>header</h1></div> -->
+        <header class="main-header" id="get-header">
+
+            <nav class=" nav main-nav">
+                <a href="SwiftPharma.html"><img class="image header-logo" src="./item-page_files/pharmacy-logo-by-Vexels.png"></a>
+
+                <div class="search-header">
+                    <div class="dropdown">
+                        <!--to create a hover button-->
+                        <button class="button dropbtn">Browse</button>
+                        <div class="dropdown-content">
+                            <a href="search-res.html">Ayurvedic</a>
+                            <a href="search-res.html">Homeopathic</a>
+                            <a href="search-res.html">Allopathic</a>
+                        </div>
+                    </div>
+                    <form class="form-class" action="search-res.html" method="POST">
+                        <input type="text" id="query" name="query" placeholder="Search..." required="">
+                        <button class="button search-btn" type="submit"> <i class="fa fa-search"> </i> </button>
+                    </form>
+                </div>
+                <div class="user-content">
+                    
+                    <div class="user-msg"> <h5 class="hello-user">Hello, sidharth</h5><a href="user-info.html"> <button class="button user-btn-logged" type="button"> <i class="fa fa-user"> </i> </button></a> </div>
+                    
+                </div>
+            </nav>
+        </header>
+
+        <!-- <i class="fa fa-user"> </i> -->
+
+    <div class="content">
+
+        <section class="item-display">
+            <div class="item-img">
+                <img class="item-img img" src="./item-page_files/D-133.png"> <!--data take from DB-->
+            </div>
+            <div class="item-details-column">
+                <div class="title">
+                    <h1 class="item-title">Cureveda Stress Shield</h1>                           <!--data take from DB-->
+                    <span class="category">category: antidepressant</span>                    <!--data take from DB-->
+                </div>
+                <div class="item-price-details">
+                    <span class="price">Price: <span class="💲">₹ 1185.00 </span> </span>                          <!--data take from DB-->
+                    <span class="hardcode-content">(Inclusive of all taxes)</span>       <!-- to add a quantity input button-->
+                    <span class="hardcode-content">This product cannot be returned for a refund or exchange.</span>
+                    <span class="manufacturer">Mkt: Cureveda</span>        <!--data take from DB-->
+                    <span class="Dosage">Dosage:300gm</span>                      <!--data take from DB-->
+                    
+                    <span class="Stock" style="color:rgb(73, 172, 70)">In Stock</span>                      <!--data take from DB-->
+                    <span class="quantity"><form action="" method="">
+                        <input type="number" value="1" min="1" max="9" step="1" name="quantity" id="quantity" required="">
+                        <div class="payment">Mode of payment
+                            <input type="text" list="pay" id="payment" name="payment" required="">
+                            <datalist id="pay">
+                            <option value="Cash on Delivery">Cash on Delivery</option>
+                            <option value="Netbanking">Netbanking</option>
+                            </datalist>
+                        </div>
+                    <button class="button buy-btn" type="submit" onclick="jump_fun()">BUY NOW</button></form></span>
+                     
+                </div>
+                <div class="pincode">
+                    <span>PINCODE:134109</span>                       <!--data take from DB-->
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details">                       <!--data take from DB-->
+            <h2 class="title">Product Details</h2>
+            <div class="column manufacturer-details">
+                <div class="😁">Barcode:<span> D-133</span> </div>
+                <div>Name of Manufacturer/Marketer: <span> Cureveda</span> </div>                      
+                <div class="😁">Company contact no: <span> 69696969</span> </div>               
+                <div>Company Email: <span> Cureveda@gmail.com</span> </div>                    
+                <div class="😁">Warehouse ID: <span> 1</span> </div>                     
+                <div>Warehouse Address: <span> Srinagar</span> </div>               
+                
+            </div>    
+
+        </section>
+
+        <section class="shop Similar-products">
+            <h2 class="shop-title">Similar Products</h2>
+            <div class="shop-row">
+                 
+                <a href="item-page.html">
+                    </a><div class="card-product"><a href="item-page.html">
+                    <img class="card-product-img" src="./item-page_files/D-117.png">
+                    <div>
+                        <span class="card-product-name">Nixiyax Capsule</span>
+                    </div>
+                    <div class="card-product-price-content">
+                        <span class="card-product-content">Best Price </span>
+                        <span class="card-product-price">Rs.386.00</span>
+                    </div>
+                    </a><a href="item-page.html"><button class="button card-product-btn">BUY NOW</button></a>
+                </div>
+                
+                 
+                <a href="item-page.html">
+                    </a><div class="card-product"><a href="item-page.html">
+                    <img class="card-product-img" src="./item-page_files/D-128.png">
+                    <div>
+                        <span class="card-product-name">Supp Stress Relief</span>
+                    </div>
+                    <div class="card-product-price-content">
+                        <span class="card-product-content">Best Price </span>
+                        <span class="card-product-price">Rs.1167.00</span>
+                    </div>
+                    </a><a href="item-page.html"><button class="button card-product-btn">BUY NOW</button></a>
+                </div>
+                
+                 
+                <div class="row-btn previous-button"></div>
+                <div class="row-btn next-button"></div>
+            </div>
+        </section>
+
+
+<footer class="footer main-footer">
+    <div class="nav main-footer-container">
+        <div class="footer-column know-us">
+            <ul class="main-footer-nav">
+                <span class="footer-column-title">Know Us</span>
+                <li>Join Us</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+
+        <div class="footer-column shopping">
+            <ul class="main-footer-nav">
+                <span class="footer-column-title">Shopping</span>
+                <li>Browse by A-Z</li>
+                <li>Sort By Manufacturer</li>
+            </ul>
+        </div>
+
+        <div class="footer-column contact">
+            <ul class="main-footer-nav">
+                <span class="footer-column-title">Contact</span>
+                <li><i class="fa fa-globe">Plot No. 417, Industrial Area Phase-9, S.A.S Nagar, Mohali 160062.
+                        (Punjab)</i></li>
+                <li><i class="fa fa-phone">1234567890</i></li>
+                <li><i class="fa fa-envelope-open">SwiftPharma@abc.com</i></li>
+
+            </ul>
+        </div>
+
+        <div class="footer-column website-info">
+            <h2 class="sitename">SwiftPharma</h2>
+            <img class="image footer-logo" src="./item-page_files/pharmacy-logo-by-Vexels.png">
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <!-- <div class="footer-bottom-container"> -->
+            <span class="copyright">© Swiftpharma | Website Designed And Managed By : The Archons</span>
+            <ul class="footer-bottom-list">
+                <li><a href="https://www.facebook.com/" target="blank"><img class="image footer-img" src="./item-page_files/logo-facebook.png" alt="click to go to facebook"></a></li><a href="https://www.facebook.com/" target="blank">
+                </a><li><a href="https://www.facebook.com/" target="blank"></a><a href="https://www.instagram.com/" target="blank"><img class="image footer-img" src="./item-page_files/logo-instagram.png"></a></li><a href="https://www.instagram.com/" target="blank">
+                </a><li><a href="https://www.instagram.com/" target="blank"></a><a href="https://www.twitter.com/" target="blank"><img class="image footer-img" src="./item-page_files/logo-twitter.png"></a></li><a href="https://www.twitter.com/" target="blank">
+            </a></ul><a href="https://www.twitter.com/" target="blank">
+        <!-- </div> -->
+    </a></div><a href="https://www.twitter.com/" target="blank">
+</a></footer><a href="https://www.twitter.com/" target="blank">
+
+
+
+</a></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
